@@ -46,8 +46,9 @@ console.log(Math.log10(100)); // 2
 // Número aleatorio entre dos valores (Min y Max, inclusive)
 let min = 1;
 let max = 10;
-const randomNum = Math.round(Math.random() * (max - min) + min);
-console.log(randomNum); // Número aleatorio entre 1 y 10
+const randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+console.log(randomNum); // Número aleatorio entre 1 y 10, ambos inclusive
+//! si o si es math floor
 
 // Número entero aleatorio entre min (inclusive) y max (exclusive)
 const randomIntExclusive = Math.floor(Math.random() * (max - min) + min);
